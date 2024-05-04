@@ -1,0 +1,83 @@
+@keyframes backgroundColor{
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+header {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: #202020;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #202020;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+body {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(137, 78, 176), rgb(30, 30, 245), rgb(238, 44, 44), rgb(137, 78, 176));
+    background-size: 200% 200%;
+    animation: backgroundColor 15s ease infinite;
+
+}
+
+.game{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+.gameImg{
+    width: 100%;
+    max-width: 300px;
+    transition: transform .3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    margin: 5px;
+}
+.gameImg:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, .75);
+}
+
+
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button:hover{
+    background-color: #c8d6ee28;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, .75);
+    border: 3px solid black;
+}

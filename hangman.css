@@ -1,0 +1,52 @@
+.hangmanImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game {
+    text-align: center;
+    width: 400px; 
+    
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.return {
+    align-items: center;
+}
+
+button {
+    padding: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 1px;
+    background-color: black;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+

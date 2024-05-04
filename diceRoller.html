@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Dice Roller</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="dice.css" rel="stylesheet" type="text/css" />
+    <script src="dice.js" defer></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>Dice Roller</header>
+    <nav>
+      <a href="gameBase.html" class="button">Return to Arcade</a>
+    </nav>
+    <main>
+      <section id="diceSelection">
+        <h2>Choose Number of Dice:</h2>
+        <div id="diceButtons">
+          <button class="button" type="button" diceNum="1">1</button>
+          <button class="button" type="button" diceNum="2">2</button>
+          <button class="button" type="button" diceNum="3">3</button>
+          <button class="button" type="button" diceNum="4">4</button>
+          <button class="button" type="button" diceNum="5">5</button>
+          <button class="button" type="button" diceNum="6">6</button>
+        </div>
+      </section>
+      <section id="diceOutput">
+        <h2>Dice Roll Result:</h2>
+        <div class="cube"></div>
+        <p class="total"></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Tyler Vo. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
