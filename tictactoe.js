@@ -1,3 +1,4 @@
+// Code from: https://github.com/Siphiwo/tic-tac-toe-js-game/tree/main
 let playerText = document.getElementById('playerText')
 let restartBtn = document.getElementById('restartBtn')
 let boxes = Array.from(document.getElementsByClassName('box'))
